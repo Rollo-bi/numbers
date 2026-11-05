@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Your account wallet and balance activity.">
+    <title>My wallet | NumberPort</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script type="module" src="../js/app.js"></script>
+</head>
+
+<body data-page="wallet">
+    <div id="siteHeader"></div>
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <div class="breadcrumbs"><a href="../index.html">Home</a> / My wallet</div><span
+                    class="eyebrow">NumberPort</span>
+                <h1 style="margin-top:15px">My wallet</h1>
+                <p>Your account wallet and balance activity.</p>
+            </div>
+        </section>
+        <section class="section" style="padding-top:18px">
+            <div class="container">
+                <div class="dashboard-layout">
+                    <aside class="side-nav"><a href="dashboard.html">▦ Overview</a><a href="my-numbers.html">☎ My
+                            numbers</a><a href="orders.html">▤ Orders</a><a class="active" href="wallet.html">◈
+                            Wallet</a><a href="transactions.html">⇄ Transactions</a><a href="profile.html">◎
+                            Profile</a><a href="support.html">? Support</a></aside>
+                    <section class="dash-main">
+                        <div class="dash-head">
+                            <div>
+                                <h2>Wallet</h2>
+                                <p class="muted">Wallet data will be loaded securely from the backend.</p>
+                            </div>
+                        </div>
+                        <div class="grid-2">
+                            <div class="card"><span class="muted">Available balance</span>
+                                <div class="visual-number" data-wallet-balance-text>—</div>
+                                <p>Your balance is read from the NumberPort backend.</p>
+                            </div>
+                            <div class="card">
+                                <h3>Add funds</h3>
+                                <p>Pay with M-PESA or card through Paystack. Your wallet is held in USD; checkout
+                                    converts your deposit to KES using the configured rate.</p>
+                                <form data-topup-form>
+                                    <div class="field"><label for="topupAmount">Amount (USD)</label><input
+                                            id="topupAmount" name="amount" type="number" min="2" max="5000" step="0.01"
+                                            placeholder="10.00" required></div><button class="btn btn-primary"
+                                        type="submit">Continue to Paystack</button>
+                                </form>
+                                <p class="muted" style="font-size:12px">Minimum $2 · Maximum $1,000 per deposit.
+                                    Deposits are credited only after server-side payment verification.</p>
+                                <p class="muted" data-fx-note>Loading payment configuration…</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div id="siteFooter"></div>
+</body>
+
+</html>

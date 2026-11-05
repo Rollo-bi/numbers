@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description"
+        content="Explore temporary SMS activations and longer-term number rentals across our initial supported markets.">
+    <title>Browse virtual numbers | NumberPort</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script type="module" src="../js/app.js"></script>
+</head>
+
+<body data-page="browse" data-catalogue="all">
+    <div id="siteHeader"></div>
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <div class="breadcrumbs"><a href="../index.html">Home</a> / Browse virtual numbers</div><span
+                    class="eyebrow">NumberPort</span>
+                <h1 style="margin-top:15px">Browse virtual numbers</h1>
+                <p>Explore temporary SMS activations and longer-term number rentals across our initial supported
+                    markets.</p>
+            </div>
+        </section>
+        <section class="section" style="padding-top:18px">
+            <div class="container">
+                <div class="toolbar">
+                    <div class="field"><label for="countryFilter">Country</label><select id="countryFilter">
+                            <option value="all">All countries</option>
+                            <option value="US">United States</option>
+                            <option value="GB">United Kingdom</option>
+                            <option value="CA">Canada</option>
+                            <option value="DE">Germany</option>
+                            <option value="AU">Australia</option>
+                        </select></div>
+                    <div class="field"><label for="serviceFilter">Service</label><select id="serviceFilter">
+                            <option value="all">All services</option>
+                            <option value="whatsapp">WhatsApp</option>
+                            <option value="telegram">Telegram</option>
+                            <option value="general">General SMS</option>
+                            <option value="business">Business line</option>
+                            <option value="voice">Voice + SMS</option>
+                        </select></div>
+                </div>
+                <div class="notice">Catalogue preview: displayed options and prices are illustrative sample data, not
+                    live supplier inventory or confirmed availability.</div>
+                <div class="grid-3" id="catalogueGrid" style="margin-top:20px"></div>
+            </div>
+        </section>
+    </main>
+    <div id="siteFooter"></div>
+</body>
+
+</html>

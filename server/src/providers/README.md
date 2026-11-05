@@ -1,0 +1,1 @@
+Implement telecom and payment adapters only after the provider approves resale and provides API documentation. Keep credentials server-side. Verify signed webhooks, use idempotency keys, reconcile amount/currency/status, and make wallet ledger entries immutable. Do not debit until provider provisioning/payment state is confirmed.

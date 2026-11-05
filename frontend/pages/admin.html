@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Manage NumberPort customers, orders, supplier balance and operations.">
+    <title>Administration | NumberPort</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script type="module" src="../js/app.js"></script>
+</head>
+
+<body data-page="admin">
+    <div id="siteHeader"></div>
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <div class="breadcrumbs"><a href="../index.html">Home</a> / Administration</div><span
+                    class="eyebrow">NumberPort</span>
+                <h1 style="margin-top:15px">Administration</h1>
+                <p>Manage NumberPort customers, orders, supplier balance and operations.</p>
+            </div>
+        </section>
+        <section class="section" style="padding-top:18px">
+            <div class="container">
+                <div class="notice">Admin access is enforced by Firebase custom claims on backend endpoints. Supplier
+                    balance is working capital held at 1001SMS and is separate from customer deposits.</div>
+                <div class="stat-grid" style="margin-top:20px">
+                    <div class="card stat-card"><span>Customers</span><strong>—</strong></div>
+                    <div class="card stat-card"><span>Orders</span><strong>—</strong></div>
+                    <div class="card stat-card"><span>Pending fulfilment</span><strong>—</strong></div>
+                    <div class="card stat-card"><span>Revenue</span><strong>—</strong></div>
+                </div>
+                <div class="grid-2">
+                    <div class="card">
+                        <h3>Order management</h3>
+                        <p>Review payments, supplier fulfilment and customer order records.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Catalogue management</h3>
+                        <p>Manage enabled countries, services, rental periods and pricing rules.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Withdrawal / refund review</h3>
+                        <p>Review customer requests and record decisions with an audit trail.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Customer support</h3>
+                        <p>Review support tickets and account issues.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div id="siteFooter"></div>
+</body>
+
+</html>
